@@ -1,0 +1,33 @@
+/*
+6. Faça um programa que solicita ao usuário dois valores inteiros e positivos que serão a base e o
+expoente. O programa deve usar laço de repetição para calcular e escrever o resultado da base
+elevado ao expoente (potencia).
+*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int cont = 1;
+    int base, expoente, result;
+    
+    cout << "escreva dois numeros, o primeiro sera a base e o segundo o expoente: ";
+    cin >> base >> expoente;
+    
+    result = base;
+    
+    if (expoente==0)
+    result = 1;
+    
+    while(cont<expoente)
+    {
+        result = base*result;
+        cont++;
+    }
+    
+    cout << result;
+
+    return 0;
+}
