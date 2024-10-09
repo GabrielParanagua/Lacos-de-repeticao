@@ -1,0 +1,31 @@
+/*
+7. Faça um programa que solicita ao usuário uma quantidade indeterminada de números inteiros.
+O programa deve calcular e escrever a média aritmética apenas dos números pares. A entrada
+de dados deve ser encerrada quando o número 0 (ZERO) for digitado.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    
+    int soma;
+    int cont = 0;
+    float result = 0;
+    
+    do
+    {
+        cout << "escreva um numero: \n";
+        cin >> soma;
+        
+        if (soma!=0 && soma%2 == 0){
+            result += soma;
+            cont++;
+        }
+    }while (soma!=0);
+    
+    cout << result/cont;
+    
+    return 0;
+}
