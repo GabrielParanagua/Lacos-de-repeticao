@@ -1,0 +1,19 @@
+/*
+4. Faça um programa que exiba na tela os números inteiros de 50 até 200.
+*/
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int cont = 50;
+    
+    while (cont<=200)
+    {
+        cout << cont << endl;
+        cont++;
+    }
+    
+    return 0;
+}
